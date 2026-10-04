@@ -63,14 +63,15 @@ main {
   margin: auto;
 }
 
-main img {
+img {
   width: 100%;
 }
 
 /* Modal */
 
 .modal {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -83,6 +84,35 @@ main img {
   border-radius: 5px;
   box-shadow: 0 0 6px 2px #666;
 }
+
+.modal-inner {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.modal-inner h2 {
+  margin-top: 0;
+}
+
+.modal-text {
+  /* height: 140px; */
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+/* modal input */
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #212529;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+/* modal buttons */
 
 .modal-close-btn-container {
   margin: 9px;
@@ -110,29 +140,6 @@ main img {
   cursor: not-allowed;
 }
 
-.modal-inner {
-  margin: 0 30px;
-}
-
-.modal-inner h2 {
-  margin-top: 0;
-}
-
-.modal-text {
-  line-height: 23px;
-  margin-bottom: 0;
-}
-
-input {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #212529;
-  border-radius: 3px;
-  width: 100%;
-  font-size: 1rem;
-  font-family: sans-serif;
-}
-
 .modal-choice-btns {
   margin-top: 10px;
   padding: 8px 16px;
@@ -144,4 +151,33 @@ input {
   padding: 10px 24px;
   font-family: sans-serif;
   font-size: 1rem;
+}
+
+.modal-btns-reverse {
+  flex-direction: row-reverse;
+}
+
+/* modal after submit */
+
+.modal-inner-loading {
+  text-align: center;
+}
+
+.loading {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-display-name {
+  color: fuchsia;
+}
+
+.idiot-gif {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.idiot-gif img {
+  box-shadow: 1px 1px 3px #999;
+  border-radius: 5px;
 }
