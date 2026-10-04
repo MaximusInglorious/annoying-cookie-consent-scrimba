@@ -1,67 +1,147 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #222;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #222;
 }
 
 /* Typography */
 
 h1 {
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 900;
 }
 
 ul {
-    list-style: none;
-    padding: 5px 0 0 0;
+  list-style: none;
+  padding: 5px 0 0 0;
 }
 
 ul li {
-    padding: 15px;
-    margin-bottom: 12px;
-    font-size: 22px;
-    font-weight: 500;
+  padding: 15px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .li-green {
-    background-color: #E5FDEA;
+  background-color: #e5fdea;
 }
 
 .li-yellow {
-    background-color: #FCFDD6;
+  background-color: #fcfdd6;
 }
 
 .li-blue {
-    background-color: #E5F9FE;
+  background-color: #e5f9fe;
 }
 
 .li-pink {
-    background-color: #FCF1FE;
+  background-color: #fcf1fe;
 }
 
 h3 {
-    font-size: 20px;
-    line-height: 30px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 28px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /* Layout */
 
 main {
-    width: 400px;
-    margin: auto;
+  width: 400px;
+  margin: auto;
 }
 
 main img {
-    width: 100%;
+  width: 100%;
+}
+
+/* Modal */
+
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 350px;
+  height: 420px;
+  margin: auto;
+  background-color: #212529;
+  color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px #666;
+}
+
+.modal-close-btn-container {
+  margin: 9px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active {
+    cursor: active;
+    color: red;
+}
+
+.modal-close-btn:disabled {
+  color: whitesmoke;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.modal-inner {
+  margin: 0 30px;
+}
+
+.modal-inner h2 {
+  margin-top: 0;
+}
+
+.modal-text {
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #212529;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.modal-choice-btns {
+  margin-top: 10px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-choice-btns button {
+  padding: 10px 24px;
+  font-family: sans-serif;
+  font-size: 1rem;
 }
